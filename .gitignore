@@ -41,6 +41,7 @@ jspm_packages
 .node_repl_history
 
 # build directories
-./build
-./lib
-./tests
+build
+typings
+
+#typescript
