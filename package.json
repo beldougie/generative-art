@@ -4,7 +4,7 @@
   "description": "A package for creating 'fractal' art on the fly",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/bin/.mocha"
   },
   "keywords": [
     "generative",
@@ -13,12 +13,16 @@
     "image"
   ],
   "author": {
-    "name":"Matt Keeble",
+    "name": "Matt Keeble",
     "email": "matt.keeble@gmail.com"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/beldougie/generative-art.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
 }
