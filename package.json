@@ -2,9 +2,13 @@
   "name": "generative-art",
   "version": "0.0.1",
   "description": "A package for creating 'fractal' art on the fly",
-  "main": "index.js",
+  "main": "./lib/gArt.js",
   "scripts": {
     "test": "./node_modules/bin/.mocha"
+  },
+  "directories": {
+    "test": "test",
+    "lib": "lib"
   },
   "keywords": [
     "generative",
@@ -24,5 +28,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "canvas": "^1.4.0"
   }
 }
