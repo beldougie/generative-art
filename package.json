@@ -1,0 +1,24 @@
+{
+  "name": "generative-art",
+  "version": "0.0.1",
+  "description": "A package for creating 'fractal' art on the fly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "generative",
+    "art",
+    "fractal",
+    "image"
+  ],
+  "author": {
+    "name":"Matt Keeble",
+    "email": "matt.keeble@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beldougie/generative-art.git"
+  }.
+  "license": "ISC"
+}
