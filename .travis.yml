@@ -5,11 +5,11 @@ node_js:
   - "iojs"
 
 before_install:
-  - sudo apt-get update
+  - sudo apt-get -qq update
   - sudo apt-get install python-software-properties
-  - sudo apt-get-repository ppa:ubuntu-toolchain-r/test
-  - sudo apt-get update
+  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+  - sudo apt-get -qq update
   - sudo apt-get install gcc-5 g++-5
   - sudo sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++ gcc
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 80 --slave /usr/bin/g++ g++ /usr/bin/g++-5
-  - sudo update-alternatives --config gcc 
+  - sudo update-alternatives --config gcc
