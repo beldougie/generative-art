@@ -1,4 +1,5 @@
 # Generative Art
+[![Build Status](https://travis-ci.org/beldougie/generative-art.svg?branch=develop)](https://travis-ci.org/beldougie/generative-art)
 
 ## Overview
 This package is based on an article at
