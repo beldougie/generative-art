@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "4.4"
+  - "6.5.0"
   - "iojs"
 
 before_install:
@@ -12,3 +12,4 @@ before_install:
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 80 --slave /usr/bin/g++ g++ /usr/bin/g++-5
   - sudo update-alternatives --set gcc /usr/bin/gcc-5
   - sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential
+  - npm install -g mocha
