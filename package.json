@@ -9,7 +9,7 @@
   "scripts": {
     "build": "./node_modules/.bin/tsc",
     "pretest": "npm build",
-    "test": "./node_modules/.bin/mocha ./build/tests",
+    "test": "./node_modules/.bin/mocha -cd build/tests",
     "preinstall": "npm build"
   },
   "directories": {
