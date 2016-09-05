@@ -1,5 +1,6 @@
 'use strict';
 const BaseGenerator = require('../lib/BaseGenerator');
+const expect = require('chai').expect;
 require('chai').should();
 
 describe('BaseGenerator class', () => {
@@ -14,7 +15,9 @@ describe('BaseGenerator class', () => {
             iterations: 8,
             bgColor: '#ffffff',
             urlColor: '#000000',
-            drawsPerFrame: 6
+            drawsPerFrame: 6,
+            canvasWidth: 200,
+            canvasHeight: 200
         }
         sut.getConfig().should.deep.equal(expected);
     });
@@ -32,11 +35,16 @@ describe('BaseGenerator class', () => {
             iterations: 8,
             bgColor: '#ffffff',
             urlColor: '#000000',
-            drawsPerFrame: 6
+            drawsPerFrame: 6,
+            canvasWidth: 200,
+            canvasHeight: 200
         };
         let sut = new BaseGenerator(newConfig);
         sut.getConfig().should.deep.equal(expected);
     });
 
-    it('should create a canvas object');
+    it('should create a canvas object', () => {
+        let sut = new BaseGenerator();
+        expect(sut.createCanvas()).to.be.ok;
+    });
 });
