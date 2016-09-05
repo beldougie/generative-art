@@ -7,10 +7,8 @@
     "node": "6.5.0"
   },
   "scripts": {
-    "pretest": "./node_modules/.bin/tsc",
     "test": "./node_modules/.bin/mocha",
-    "test:watch": "./node_modules/.bin/mocha -w",
-    "postinstall": "./node_modules/.bin/typings install"
+    "test:watch": "./node_modules/.bin/mocha -w"
   },
   "directories": {
     "test": "test",
@@ -45,6 +43,8 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.14.0",
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
   },

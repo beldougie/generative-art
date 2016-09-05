@@ -1,13 +1,12 @@
-import { should, expect } from 'chai';
-import { BaseGenerator } from '../lib/BaseGenerator';
-import { IArtGenConfig } from '../lib/types.d';
+'use strict';
+require('chai').should();
+const BaseGenerator = require('../lib/BaseGenerator').BaseGenerator;
 
-should();
 describe('BaseGenerator class', () => {
 
   it('should set default config on construction', () => {
     let sut = new BaseGenerator();
-    let expected: IArtGenConfig = {
+    let expected = {
       numCircles: 1,
       minMaxRad: 200,
       maxMaxRad: 200,
@@ -22,11 +21,11 @@ describe('BaseGenerator class', () => {
   });
 
   it('should override config values passed to constructor', () => {
-    let newConfig: IArtGenConfig = {
+    let newConfig = {
       numCircles: 5,
       minMaxRad: 1000
     };
-    let expected: IArtGenConfig = {
+    let expected = {
       numCircles: 5,
       minMaxRad: 1000,
       maxMaxRad: 200,
@@ -42,6 +41,6 @@ describe('BaseGenerator class', () => {
 
   it('should create a canvas object', () => {
     let sut = new BaseGenerator();
-    sut.createCanvas().should.be.a('object');
+    sut.createCanvas().should.be.null;
   });
 });
