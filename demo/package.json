@@ -4,8 +4,14 @@
   "description": "Demo app to aid with use of generative-art package",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\" && exit 0"
   },
   "author": "Matt Keeble <matt.keeble@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "generative-art": "https://github.com/beldougie/generative-art.git",
+    "handlebars": "^4.0.5"
+  }
 }

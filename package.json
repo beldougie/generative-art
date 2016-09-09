@@ -16,20 +16,8 @@
     "lib": "lib"
   },
   "keywords": [
-    "generative",
-    "art",
-    "fractal",
-    "canvas",
-    "graphic",
-    "graphics",
-    "pixman",
-    "cairo",
-    "image",
-    "images",
-    "png",
-    "jpeg",
-    "jpg",
-    "gif"
+    "generative", "art", "fractal", "canvas", "graphic", "graphics",
+    "pixman", "cairo", "image", "images", "png", "jpeg", "jpg", "gif"
   ],
   "author": {
     "name": "Matt Keeble",
@@ -47,9 +35,6 @@
     "babel": "^6.5.2",
     "babel-cli": "^6.14.0",
     "chai": "^3.5.0",
-    "express": "^4.14.0",
-    "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.5",
     "mocha": "^3.0.2"
   },
   "dependencies": {
