@@ -4,7 +4,8 @@
   "description": "Demo app to aid with use of generative-art package",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "start": "node app.js"
   },
   "author": "Matt Keeble <matt.keeble@gmail.com>",
   "license": "ISC",
