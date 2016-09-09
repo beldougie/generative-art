@@ -1,55 +1,32 @@
 {
   "name": "generative-art",
   "version": "0.0.1",
-  "description": "A package for creating 'fractal' art on the fly",
+  "description": "A package for creating art on the fly",
   "main": "./lib/gArt.js",
+  "author": "Matt Keeble <matt.keeble@gmail.com>",
+  "bugs": "https://github.com/beldougie/generative-art/issues",
+  "license": "ISC",
   "engines": {
     "node": "6.5.0"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha",
-    "test:watch": "./node_modules/.bin/mocha -w",
-    "demo": "node ./demo/app.js"
+    "test:watch": "./node_modules/.bin/mocha -w"
   },
   "directories": {
     "test": "test",
     "lib": "lib"
   },
   "keywords": [
-    "generative",
-    "art",
-    "fractal",
-    "canvas",
-    "graphic",
-    "graphics",
-    "pixman",
-    "cairo",
-    "image",
-    "images",
-    "png",
-    "jpeg",
-    "jpg",
-    "gif"
+    "generative", "art", "fractal", "canvas", "graphic", "graphics",
+    "pixman", "cairo", "image", "images", "png", "jpeg", "jpg", "gif"
   ],
-  "author": {
-    "name": "Matt Keeble",
-    "email": "matt.keeble@gmail.com"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/beldougie/generative-art.git"
   },
-  "bugs": {
-    "url": "https://github.com/beldougie/generative-art/issues"
-  },
-  "license": "ISC",
   "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-cli": "^6.14.0",
     "chai": "^3.5.0",
-    "express": "^4.14.0",
-    "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.5",
     "mocha": "^3.0.2"
   },
   "dependencies": {
