@@ -2,6 +2,7 @@
 const express = require('express');
 const hbs = require('express-handlebars');
 const app = express();
+const SolidGenerator = require('../lib/SolidGenerator');
 
 app.engine('.html', hbs({
   extname: '.html',
@@ -14,7 +15,13 @@ app.set('view engine', '.html');
 app.set('views', __dirname + '/views');
 
 app.get('/', function (req, res) {
-  res.render('demo')
+
+  let generator = new SolidGenerator();
+  generator.startGeneration();
+  console.log('generator.canvas', generator.canvas);
+  res.render('demo', {
+    imgData: generator.canvas.toDataURL()
+  });
 });
 
 app.listen('3333', () => {
