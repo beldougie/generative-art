@@ -1,0 +1,11 @@
+{
+  "name": "generative-art-demo",
+  "version": "0.0.1",
+  "description": "Demo app to aid with use of generative-art package",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Keeble <matt.keeble@gmail.com>",
+  "license": "ISC"
+}
