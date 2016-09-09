@@ -17,10 +17,10 @@ app.set('views', __dirname + '/views');
 app.get('/', function (req, res) {
 
   let generator = new SolidGenerator();
-  generator.startGeneration();
-  console.log('generator.canvas', generator.canvas);
-  res.render('demo', {
-    imgData: generator.canvas.toDataURL()
+  generator.startGeneration().then((ctx) => {
+    res.render('demo', {
+      imgData: ctx.canvas.toDataURL()
+    });
   });
 });
 
