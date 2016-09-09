@@ -40,7 +40,7 @@ app.get('/solid/:width?/:height?', (req, res) => {
       imgData: ctx.canvas.toDataURL(),
       imgInfo: 'This image is created using the same generator as on <a href="/">the landing page</a> but the width height are customised by url paramters.</p>' +
         '<p>Current parameters ' + (req.params.width === undefined ? '(defaults)' : '') + ' are width: ' + w + 'px & height: ' + h + 'px</p>' +
-        '<p>To ammend the size of the image, change the path in your address bar as follows: ... <pre>/solid/&lt;width&gt;/&lt;height&gt;</pre>. eg: <pre>/solid/600/600</pre>'
+        '<p>To ammend the size of the image, change the path in your address bar as follows: <pre>/solid/&lt;width&gt;/&lt;height&gt;</pre>. eg: <pre>/solid/600/600</pre>'
     });
   });
 });
