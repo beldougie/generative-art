@@ -1,0 +1,8 @@
+html {
+  padding: 2rem;
+  font-size: 1.1rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+pre {
+  display: inline-block !important;
+}
