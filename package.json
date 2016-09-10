@@ -1,6 +1,6 @@
 {
   "name": "generative-art",
-  "version": "0.0.1",
+  "version": "0.0.2-dev",
   "description": "A package for creating art on the fly",
   "main": "./lib/gArt.js",
   "author": "Matt Keeble <matt.keeble@gmail.com>",
