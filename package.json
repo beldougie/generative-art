@@ -1,24 +1,36 @@
 {
   "name": "generative-art",
   "version": "0.0.1",
-  "description": "A package for creating 'fractal' art on the fly",
-  "main": "index.js",
+  "description": "A package for creating art on the fly",
+  "main": "./lib/gArt.js",
+  "author": "Matt Keeble <matt.keeble@gmail.com>",
+  "bugs": "https://github.com/beldougie/generative-art/issues",
+  "license": "ISC",
+  "engines": {
+    "node": "6.5.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha",
+    "test:watch": "./node_modules/.bin/mocha -w"
+  },
+  "directories": {
+    "test": "test",
+    "lib": "lib"
   },
   "keywords": [
-    "generative",
-    "art",
-    "fractal",
-    "image"
+    "generative", "art", "fractal", "canvas", "graphic", "graphics",
+    "pixman", "cairo", "image", "images", "png", "jpeg", "jpg", "gif"
   ],
-  "author": {
-    "name":"Matt Keeble",
-    "email": "matt.keeble@gmail.com"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/beldougie/generative-art.git"
-  }.
-  "license": "ISC"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "canvas": "^1.4.0",
+    "lodash": "^4.15.0"
+  }
 }
