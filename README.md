@@ -8,5 +8,9 @@ method of creating artwork using fractal lines and the `<canvas>` element.
 
 The algorithms defined here are not my own work. Full credit belongs to [RectangleWorld.com](http://rectangleworld.com)
 
+## Demo
+The git repository contains a demo app that has examples of how to use the library in your own applications.
+
+The demo app will be expanded as the library grows to provide more functionality.
 
 TODO everything
