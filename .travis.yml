@@ -1,8 +1,6 @@
 language: node_js
-
 node_js:
-  - "6.5.0"
-
+  - 6.5.0
 before_install:
   - sudo apt-get install python-software-properties
   - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
@@ -12,3 +10,12 @@ before_install:
   - sudo update-alternatives --set gcc /usr/bin/gcc-5
   - sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential
   - npm install -g mocha
+deploy:
+  provider: npm
+  email: matt.keeble@gmail.com
+  api_key:
+    secure: j+LKVjb5cwZJYyG9t3fCe4ea8hPUJ5mtPQlyCTxJhKPPdTwQDNnM/pGPUGXjUuhWtHjXGF7DuoLyX59axQbQ2GPAtyFrGCgDzdP1gJFVwNQM8jv4jahkkGuJEftn+Z4/TK32LBVJk1REDLQW5O8Dfb6N8DKCqigSqBuXQYjFX3TCoyL9XOBKWhVzM3U2WHxr0h8qnvCRIGukYUqrD4NwAuihrWY9FeSOo9OXktMrCZd/Vq+teZL9/mBcfWIyuthWCoX3nbdR3egOB2b2g6aN7/NFGMTusNtTQ856SK+My873YBc1SqgcZtPkNPA9c+WrB0T4kGXu8L7kF6RJBmDDet0M6Xwm/+LtfKa7Bk4tkM3dS85b3q2UMy9+T418Xca1SkSHU0OQT8UF0AO+y1hLvXr0boU5tPdV0tIKnhvG3JeyGAVzj0kItp8WCZ1Pk0Pxeb3xZcPUwKR1iFuT0hT1zUnp0JGdXl4sSluYvHMt5A1H+yhNE86tyu8dtI2q9k9+009FqktLKxL/XxGv68tXZ0A7Y09nlN2bjrQ5lMriaWbGlz9XqTBwSFgXpRUC5SVfLE+FklHuDO1yhhXeHd6mmkltCDa82E6nauCHJu+Oy4b9Nxdt7JyI4P4JvCKaF3MsSH+kxvhjlazq2r3ktv/QTwJHDwYt0mKcbqTJeHlJF/g=
+  on:
+    tags: true
+    repo: beldougie/generative-art
+    branch: master
