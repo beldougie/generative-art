@@ -45,6 +45,19 @@ app.get('/solid/:width?/:height?', (req, res) => {
   });
 });
 
+app.get('/intersection', (req, res) => {
+  let generator = new IntersectionGenerator({
+    canvasWidth: 1000,
+    canvasHeight: 500
+  });
+  generator.startGeneration().then((ctx) => {
+    res.render('demo', {
+      imgData: ctx.canvas.toDataURL(),
+      imgInfo: 'TBD'
+    });
+  });
+});
+
 app.listen('3333', () => {
   console.log('Demo app listening on port 3333');
 });
