@@ -10,7 +10,7 @@
     "node": "6.5.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha",
+    "test": "./node_modules/.bin/mocha --recursive",
     "test:watch": "./node_modules/.bin/mocha -w"
   },
   "directories": {
@@ -27,7 +27,8 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "sinon": "^1.17.5"
   },
   "dependencies": {
     "canvas": "^1.4.0",
