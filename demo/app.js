@@ -2,7 +2,7 @@
 const express = require('express');
 const hbs = require('express-handlebars');
 const app = express();
-const SolidGenerator = require('../lib/SolidGenerator');
+const gArt = require('generative-art');
 
 app.engine('.html', hbs({
   extname: '.html',
