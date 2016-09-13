@@ -18,7 +18,7 @@ app.use(express.static('demo/public'));
 
 app.get('/', function (req, res) {
 
-  let generator = new SolidGenerator();
+  let generator = new gArt.SolidGenerator();
   generator.startGeneration().then((ctx) => {
     res.render('demo', {
       imgData: ctx.canvas.toDataURL(),
@@ -31,7 +31,7 @@ app.get('/solid/:width?/:height?', (req, res) => {
   let w = req.params.width || 1000;
   let h = req.params.height || 600;
 
-  let generator = new SolidGenerator({
+  let generator = new gArt.SolidGenerator({
     canvasWidth: parseInt(w),
     canvasHeight: parseInt(h)
   });
@@ -46,7 +46,7 @@ app.get('/solid/:width?/:height?', (req, res) => {
 });
 
 app.get('/intersection', (req, res) => {
-  let generator = new IntersectionGenerator({
+  let generator = new gArt.IntersectionGenerator({
     canvasWidth: 1000,
     canvasHeight: 500
   });
